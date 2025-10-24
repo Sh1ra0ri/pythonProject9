@@ -4,7 +4,6 @@ from typing import List, Tuple, Dict, Any, cast
 
 class DBManager:
     """Модуль для взаимодействия с PostgreSQL."""
-
     def __init__(self, password: str):
         self.conn = psycopg2.connect(
             dbname="vacancies_hh_ru",
